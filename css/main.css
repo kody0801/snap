@@ -1,0 +1,239 @@
+/* epilogue-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/epilogue-v17-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* epilogue-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/epilogue-v17-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: "Epilogue", "Arial", sans-serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.site-header {
+    padding: 21px 0;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav {
+    margin-left: 62px;
+    margin-right: 653px;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 40px;
+}
+
+.nav__item {
+    position: relative;
+}
+
+.nav__item:hover .nav__dropdown-list {
+    display: flex;
+}
+
+.nav__item:hover .nav__link{
+    color: #151515;
+}
+
+.nav__link {
+    padding: 20px 0;
+    display: flex;
+    column-gap: 7px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #686868;
+}
+
+.nav__dropdown-list {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    row-gap: 16px;
+    width: max-content;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px 0px #00000026;
+    right: 0;
+
+}
+
+.fa-rectangle-list {
+    color: #726cee;
+}
+
+.fa-calendar-day {
+    color: #4bb1da;
+}
+
+.fa-bell {
+    color: #edd556;
+}
+
+.fa-clock {
+    color: #8e4cb6;
+}
+
+.nav__dropdown-link {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #686868;
+}
+
+.nav__item:hover .fa-chevron-down {
+    display: none;
+}
+
+.nav__item:hover .fa-chevron-up {
+    display: inline-block;
+}
+
+.fa-chevron-up {
+    display: none;
+}
+
+.header__registration-box {
+    /* width: 157px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.registration__link {
+    font-size: 14px;
+    line-height: 16px;
+    color: #686868;
+}
+
+.registration__link:hover {
+    color: #151515;
+}
+
+.registration__btn {
+    padding: 13px 23px;
+    border: 1.5px solid #686868;
+    border-radius: 14px;
+    background-color: transparent;
+    color: #686868;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.registration__btn:hover {
+    border: 1.5px solid #151515;
+    color: #151515;
+}
+
+.site-main {
+    flex-grow: 1;
+}
+
+.intro {
+    padding: 46px 0 130px 0;
+    background-image: url(../images/intro-img.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: calc(1115px) calc(46px);
+}
+
+.intro__infos {
+    width: 540px;
+    margin-top: 108px;
+    margin-left: 95px;
+    margin-bottom: 108px;
+}
+
+.intro__title {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: -1.1111111640930176px;
+    color: #151515;
+    margin-bottom: 48px;
+}
+
+.intro__desc {
+    font-size: 18px;
+    line-height: 28px;
+    color: #686868;
+    margin-bottom: 51px;
+}
+
+.intro__btn {
+    padding: 14px 28px;
+    border: 1px solid #151515;
+    border-radius: 15px;
+    background-color: #151515;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.25px;
+    text-align: center;
+    color: #fafafa;
+}
+
+.intro__btn:hover {
+    /* border: 1px solid #151515; */
+    background-color: transparent;
+    color: #151515;
+}
+
+.intro__logo-list {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    margin-left: 125px;
+}
